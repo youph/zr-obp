@@ -46,7 +46,7 @@ def run_bandit_replay(
         bandit_feedback["position"] = np.zeros_like(
             bandit_feedback["action"], dtype=int
         )
-    for action_, reward_, position_, context_ in tqdm(
+    for action_, reward_, position_, context_ in tqdm.tqdm(
         zip(
             bandit_feedback["action"],
             bandit_feedback["reward"],
